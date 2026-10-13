@@ -14,6 +14,7 @@ public class TorpedoStore {
   private double FAILURE_RATE = 0.0; //NOSONAR
 
   private int torpedoCount = 0;
+  //Random is created here once, so it doesn't have to be generated over and over
   private final Random generator = new Random();
 
   public TorpedoStore(int numberOfTorpedos){
